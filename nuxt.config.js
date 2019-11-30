@@ -38,7 +38,28 @@ export default {
   /*
    ** Nuxt.js modules
    */
-  modules: ['@nuxtjs/pwa'],
+  modules: [
+    '@nuxtjs/pwa',
+    '@nuxtjs/markdownit'
+  ],
+  // [optional] markdownit options
+  // See https://github.com/markdown-it/markdown-it
+  /*
+  ** How to use:
+  **   on .vue -> <template lang="md">
+  **   on md file
+  **   https://www.npmjs.com/package/@nuxtjs/markdownit
+  */
+  markdownit: {
+    preset: 'default',
+    linkify: true,
+    breaks: true,
+    injected: true,
+    use: [
+      'markdown-it-div',
+      'markdown-it-attrs'
+    ]
+  }
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
