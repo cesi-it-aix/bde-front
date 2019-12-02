@@ -40,7 +40,8 @@ export default {
    */
   modules: [
     '@nuxtjs/pwa',
-    '@nuxtjs/markdownit'
+    '@nuxtjs/markdownit',
+    '@nuxtjs/apollo'
   ],
   // [optional] markdownit options
   // See https://github.com/markdown-it/markdown-it
@@ -59,7 +60,7 @@ export default {
       'markdown-it-div',
       'markdown-it-attrs'
     ]
-  }
+  },
   /*
    ** vuetify module configuration
    ** https://github.com/nuxt-community/vuetify-module
@@ -68,6 +69,16 @@ export default {
     customVariables: ['~/assets/variables.scss'],
     theme: {
       options: { customProperties: true }
+    }
+  },
+  /*
+  **appolo client
+  */
+  apollo: {
+    clientConfigs: {
+      default: {
+        httpEndpoint: process.env.BACKEND_URL || "http://localhost:1337/graphql"
+      }
     }
   },
   /*
