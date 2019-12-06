@@ -47,7 +47,7 @@
       <v-spacer />
     </v-navigation-drawer>
     <nuxt />
-    <v-footer dark padless class="blue accent-4 flex-column">
+    <v-footer dark padless class="blue accent-4 flex-column pb-5">
       <svg
         width="100%"
         viewBox="0 0 1440 224"
@@ -57,6 +57,7 @@
         xml:space="preserve"
         xmlns:serif="http://www.serif.com/"
         style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+        class="pb-5"
       >
         <path
           d="M0,64l80,26.7c80,26.3 240,80.3 400,101.3c160,21 320,11 480,10.7c160,0.3 320,10.3 400,16l80,5.3l0,-224l-80,0l-1280,0l-80,0l0,64Z"
