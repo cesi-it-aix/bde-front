@@ -6,24 +6,16 @@
       :color="isScrolled ? 'shades white' : 'shades transparent'"
       fixed
     >
-      <v-app-bar-nav-icon
-        class="d-md-none"
-        large
-        @click.stop="drawer = !drawer"
-      ></v-app-bar-nav-icon>
+      <v-app-bar-nav-icon class="d-md-none" large @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
       <img src="logo_large.png" height="100%" width="auto" />
       <v-toolbar-items class="d-none d-md-flex">
-        <v-btn v-for="route in routes" :key="route.title" text :to="route.url">
-          {{ route.title }}
-        </v-btn>
+        <v-btn v-for="route in routes" :key="route.title" text :to="route.url">{{ route.title }}</v-btn>
       </v-toolbar-items>
       <v-spacer />
       <v-btn icon class="mr-2 d-none d-md-flex">
         <v-icon>mdi-cart</v-icon>
       </v-btn>
-      <v-btn rounded outlined class="d-none d-md-flex">
-        Se connecter
-      </v-btn>
+      <v-btn rounded outlined class="d-none d-md-flex">Se connecter</v-btn>
     </v-app-bar>
     <v-navigation-drawer
       disable-resize-watcher
@@ -49,15 +41,32 @@
           </v-list-item-content>
         </v-list-item>
         <v-btn rounded outlined>
-          <v-icon> fa-sign-in-alt </v-icon>
-          Se connecter
+          <v-icon>fa-sign-in-alt</v-icon>Se connecter
         </v-btn>
       </v-list>
       <v-spacer />
     </v-navigation-drawer>
     <nuxt />
-    <v-footer>
-      <span>&copy; 2019</span>
+    <v-footer dark padless class="blue accent-4 flex-column">
+      <svg
+        width="100%"
+        viewBox="0 0 1440 224"
+        version="1.1"
+        xmlns="http://www.w3.org/2000/svg"
+        xmlns:xlink="http://www.w3.org/1999/xlink"
+        xml:space="preserve"
+        xmlns:serif="http://www.serif.com/"
+        style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"
+      >
+        <path
+          d="M0,64l80,26.7c80,26.3 240,80.3 400,101.3c160,21 320,11 480,10.7c160,0.3 320,10.3 400,16l80,5.3l0,-224l-80,0l-1280,0l-80,0l0,64Z"
+          style="fill:#fff;fill-rule:nonzero;"
+        />
+      </svg>
+      <!-- <h2 class="headline">Nos Sponsors</h2>
+      <div class="d-flex"></div>-->
+      <h2 class="headline">Plan du site</h2>
+      <!-- <span>&copy; 2019</span> -->
     </v-footer>
   </v-app>
 </template>
