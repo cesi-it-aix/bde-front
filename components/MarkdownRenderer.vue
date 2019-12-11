@@ -3,14 +3,14 @@
 </template>
 
 <script>
-// ajouter une query que l'on donnera a markdown
-var mardown = '# Hello World!'
 
 export default {
+  props: {content: String},
   data() {
-    return {
-      model: mardown
+    return{
+      model: this.content
     }
   }
 }
+
 </script>
