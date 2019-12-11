@@ -21,7 +21,7 @@
     "nuxt": "^2.0.0"
   },
   "devDependencies": {
-    "@nuxtjs/vuetify": "^1.0.0",
+    "@nuxtjs/vuetify": "^1.9.1",
     "eslint-config-prettier": "^6.7.0",
     "eslint-plugin-prettier": "^3.0.1",
     "prettier": "^1.16.4",
