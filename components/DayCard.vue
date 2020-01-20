@@ -1,5 +1,5 @@
 <template>
-  <v-card class="day-card px-10 py-5 text-center" tile elevation="10">
+  <v-card class="day-card ma-6 px-10 py-5 text-center" tile elevation="10">
     <div>{{month}}</div>
     <div class="display-1 font-weight-black grey--text text--darken-3 my-1">{{day}}</div>
     <div>{{year}}</div>
