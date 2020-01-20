@@ -81,7 +81,7 @@ export default {
       drawer: false,
       routes: [
         { title: 'Accueil', url: '/' },
-        { title: 'Evènements', url: '/inspire' },
+        { title: 'Evènements', url: '/events' },
         { title: 'Actualités', url: '' },
         { title: 'Boutique', url: '' },
         { title: 'Cafétaria', url: '' }
