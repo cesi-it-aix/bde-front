@@ -1,8 +1,8 @@
 <template>
   <v-card class="event-card w ma-5" :to="uri" nuxt flat>
-    <div class="d-flex">
+    <div class="d-flex" :class="{'flex-row-reverse': rtl}">
       <day-card :date="event.dateStart" />
-      <v-list-item two-line class="tex">
+      <v-list-item two-line :class="{'text-right': rtl}">
         <v-list-item-content>
           <v-list-item-title class="headline mb-1">{{event.title}}</v-list-item-title>
           <v-list-item-subtitle>{{event.summary}}</v-list-item-subtitle>
@@ -20,7 +20,8 @@ export default {
     DayCard
   },
   props: {
-    event: Object
+    event: Object,
+    rtl: Boolean
   },
   computed: {
     uri() {
