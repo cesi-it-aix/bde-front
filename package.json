@@ -15,7 +15,7 @@
     "@nuxtjs/apollo": "^4.0.0-rc19",
     "@nuxtjs/markdownit": "^1.2.9",
     "@nuxtjs/pwa": "^3.0.0-beta.20",
-    "date-fns": "^2.9.0",
+    "date-fns": "^2.10.0",
     "graphql": "^14.5.8",
     "markdown-it-attrs": "^3.0.1",
     "markdown-it-div": "^1.1.0",
