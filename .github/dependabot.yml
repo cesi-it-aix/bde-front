@@ -1,0 +1,56 @@
+version: 2
+updates:
+- package-ecosystem: npm
+  directory: "/"
+  schedule:
+    interval: weekly
+    time: "08:00"
+    timezone: Europe/Paris
+  open-pull-requests-limit: 10
+  target-branch: develop
+  ignore:
+  - dependency-name: date-fns
+    versions:
+    - 2.16.1
+    - 2.17.0
+    - 2.19.0
+    - 2.20.1
+  - dependency-name: apollo-server-express
+    versions:
+    - 2.19.2
+    - 2.21.0
+    - 2.21.1
+    - 2.22.2
+  - dependency-name: apollo-server-core
+    versions:
+    - 2.19.2
+    - 2.21.0
+    - 2.22.1
+    - 2.22.2
+  - dependency-name: nuxt
+    versions:
+    - 2.14.12
+    - 2.15.1
+    - 2.15.2
+    - 2.15.3
+  - dependency-name: eslint-config-prettier
+    versions:
+    - 7.2.0
+    - 8.0.0
+    - 8.1.0
+  - dependency-name: "@vue/test-utils"
+    versions:
+    - 1.1.2
+    - 1.1.3
+  - dependency-name: eslint-plugin-prettier
+    versions:
+    - 3.3.1
+  - dependency-name: lodash
+    versions:
+    - 4.17.20
+  - dependency-name: elliptic
+    versions:
+    - 6.5.3
+  - dependency-name: handlebars
+    versions:
+    - 4.7.6
